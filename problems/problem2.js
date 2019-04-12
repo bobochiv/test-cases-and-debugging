@@ -1,12 +1,15 @@
 let verifyEquals = require('./verify-equals.js');
 
 // we need 5 test cases.
-let inputs = [];
+let inputs = [0, 1, 2, 3, 4];
 
-let outputs = [];
+let outputs = [a, b, c, d, e];
 
 // Make this function return the last letter of the string that is passed to it. If the string does not have a last letter, return undefined
-function f(str) {}
+function f(str) {
+
+
+}
 
 //This function runs a test. You do not need to change any code under here
 function runTest(i) {
