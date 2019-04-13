@@ -1,16 +1,25 @@
 let verifyEquals = require('./verify-equals.js');
 
 // we need 5 test cases.
-let inputs = [[2, 7]];
+let inputs = [[2, 7], [1, 3], [5, 10], [1, 'a'], [-1, 5]];
 
-let outputs = [14];
+let outputs = [14, 3, 50, undefined, -5];
 
 /*
   The input of the function is an array.
   Make this function return the product of the two numbers in the array.
   If one of the numbers is not passed, or if anything other than numbers are passed, return undefined.
 */
-function f(input) {}
+function f(input) {
+  if (
+    input.length === 2 &&
+    typeof input[0] === 'number' &&
+    typeof input[1] === 'number'
+  ) {
+    return input[0] * input[1];
+  }
+  return undefined;
+}
 
 //This function runs a test. You do not need to change any code under here
 function runTest(i) {

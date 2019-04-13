@@ -1,14 +1,16 @@
 let verifyEquals = require('./verify-equals.js');
 
 // we need 5 test cases.
-let inputs = [0, 1, 2, 3, 4];
+let inputs = ['apple', 'banana', 'carrot', '', 'orange'];
 
-let outputs = [a, b, c, d, e];
+let outputs = ['e', 'a', 't', undefined, 'e'];
 
-// Make this function return the last letter of the string that is passed to it. If the string does not have a last letter, return undefined
-function f(str) {
-
-
+// Make this function return the last character of the string that is passed to it. If the string does not have a last character, return undefined
+function f(input) {
+  if (input.charAt(input.length - 1) === '') {
+    return undefined;
+  }
+  return input.charAt(input.length - 1);
 }
 
 //This function runs a test. You do not need to change any code under here
@@ -18,7 +20,6 @@ function runTest(i) {
   let actual = f(inputs[i]);
   verifyEquals(expected, actual);
 }
-
 runTest(0);
 runTest(1);
 runTest(2);
