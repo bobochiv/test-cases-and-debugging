@@ -5,12 +5,18 @@ let inputs = ['max', '', 'black', 'white', 'min'];
 
 let outputs = ['m', undefined, 'b', 'w', 'm'];
 
+<<<<<<< HEAD
 // Make this function return the first character of the string that is passed to it. If the string does not have a first letter, return undefined
 function f(input) {
   if (input.charAt(0) === '') {
     return undefined;
   }
   return input.charAt(0);
+=======
+// Make this function return the first character of the string that is passed to it. If the string does not have a first character, return undefined
+function f(str) {
+  return str.charAt(0);
+>>>>>>> 49c82c328c38586bb38fa1e6013a90e58d5f1905
 }
 
 //This function runs a test. You do not need to change any code under here
